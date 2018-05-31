@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Mcc Events</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="err_msg_user">Please enter your Username</string>
+    <string name="err_msg_password">Please enter your Password</string>
+</resources>

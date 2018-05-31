@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+  <com.daimajia.slider.library.SliderLayout
+      android:id="@+id/slider"
+      android:layout_width="match_parent"
+      android:layout_height="250dp"
+      custom:auto_cycle="true"
+      custom:indicator_visibility="invisible"
+      custom:pager_animation="Accordion"
+      custom:pager_animation_span="1100" />
+
+  <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:card_view="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/card_view"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/slider"
+      card_view:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+      <TextView
+          android:id="@+id/event_name"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:fontFamily="sans-serif-smallcaps"
+          android:layout_marginRight="100dp"
+          android:text="Box Cricket"
+          android:textSize="25dp" />
+
+      <RelativeLayout
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="25dp"
+            android:text="Event On:-"
+            android:textSize="10dp"
+            android:textStyle="italic" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/on"
+            android:layout_marginRight="10dp"
+            android:text="01/04/2016" />
+
+      </RelativeLayout>
+
+    </RelativeLayout>
+
+  </android.support.v7.widget.CardView>
+
+  <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:card_view="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/card_view_1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/card_view"
+      android:layout_marginTop="10dp"
+      card_view:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+      <TextView
+          android:id="@+id/decription"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="Description"
+          android:textSize="20dp" />
+
+      <View
+          android:id="@+id/line"
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:layout_below="@+id/decription"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="5dp"
+          android:alpha="0.3"
+          android:background="#c0c0c0" />
+
+      <TextView
+          android:id="@+id/event_description"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/line"
+          android:layout_marginLeft="15dp"
+          android:layout_marginRight="15dp"
+          android:layout_marginTop="5dp"
+          android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+          android:textSize="17dp" />
+    </RelativeLayout>
+
+  </android.support.v7.widget.CardView>
+
+  <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:card_view="http://schemas.android.com/apk/res-auto"
+      android:id="@+id/card_view_2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@+id/card_view_1"
+      android:layout_marginBottom="10dp"
+      android:layout_marginTop="10dp"
+      card_view:cardElevation="3dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp">
+
+      <TextView
+          android:id="@+id/contact"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_marginLeft="10dp"
+          android:text="Contact Us"
+          android:textSize="20dp" />
+
+      <View
+          android:id="@+id/line_1"
+          android:layout_width="match_parent"
+          android:layout_height="2dp"
+          android:layout_below="@+id/contact"
+          android:layout_marginLeft="10dp"
+          android:layout_marginRight="10dp"
+          android:layout_marginTop="5dp"
+          android:alpha="0.3"
+          android:background="#c0c0c0" />
+
+      <RelativeLayout
+          android:id="@+id/rl_1"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/line_1"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/user"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/user" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/user"
+            android:text="Aman Gupta"
+            android:textSize="17dp" />
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:id="@+id/rl_2"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_below="@+id/rl_1"
+          android:layout_marginLeft="15dp"
+          android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/call"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/call" />
+
+        <TextView
+            android:id="@+id/user_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/call"
+            android:text="+91 9769314321"
+            android:textSize="17dp" />
+      </RelativeLayout>
+
+    </RelativeLayout>
+
+  </android.support.v7.widget.CardView>
+
+
+</RelativeLayout>
